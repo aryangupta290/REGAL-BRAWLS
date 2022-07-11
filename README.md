@@ -1,56 +1,57 @@
-# File Structure :
+# CLASH OF CLANS
+# Setup :
+To run the game , we need to install colorama library.
 
-Inside the main folder , I have 6 files , here are the functioanlities of each one of them :
+```$ pip3 install colorama```
 
-a) game.py : This is the file where we declare the game loop and also handle the code for replay function
+To play the game , 
 
-b) player.py : This is the main file where the all the major functionalies of the game are declared .
+```$ python3 game.py```
 
-c) Building.py : This contains the parent building class and also the decleration of the child classes ( TownHall , Cannon , Hut)
-
-d) Troops.py : Similar to Building.py , this class contains the parent troop class and the corresponding child classes (Barb King , Barbarian)
-
-e) Constants.py : Here I have declared all the constants related to my game like the size , height , width of each of the componenets
-
-f) spell.py : This class is used for implementing the rage and heal spells.
 
 # Fuctionalities :
 
 The following keyboard presses are relevent for the following jobs :
 
-a) W -> move king up  
-b) S -> move king down  
-c) D -> move king right  
-d) A -> Move king left  
-e) 1 -> Spawn a barbarian at the first location  
-f) 2 -> Spawn a barbarian at the second location  
-g) 3 -> Spawn a barbarian at the third location  
-h) 4 -> Spawn king at the first location  
-g) 5 -> Spawn king at the second location  
-h) 6-> Spawn king at the third location  
-i) 7 -> To use heal spell  
-j) 8 -> To use Rage spell  
-h) Space -> For normal attack of the king  
-i) e -> For leviathan attack of the king  
-j) z -> Spawn a archer at the first location  
-k) x -> Spawn a archer at the second location  
-l) c -> Spawn a archer at the third location  
-m) v -> Spawn a balloon at the first location  
-n) b -> Spawn a balloon at the second location  
-o) n -> Spawn a balloon at the third location  
-p) 9 -> Special attack of queen  
+* Move the king or queen using ```W,S,A,D```  
+* Spawn King or Queen at assigned locations using ```4,5,6```  
+* Spawn Barbarians  using ```1,2,3```  
+* Spawn Archer  using ```z,x,c``` 
+* Spawn Balloons  using ```v,b,n``` 
+* Do regular attack of King or Queen using ```Space```
+* Do Leviathan attack of King using ```e```  
+* Do Archer attack of Queen using ```9```
+* Activate Heal spell and Rage Spell using ```7``` and ```8``` respectively
+
+  
 
 # Features : 
 
 1) The outer wall can't be breached and it acts as the boundary within which we play the game .
-2) There are 5 huts , 1 Townhall and different number of cannons and wizards for each level:
-	Level 0 : 2 cannon , 2 wizard
-	Level 1 : 3 cannon , 3 wizard
-	Level 2 : 4 cannon , 4 wizard
-3) Cannon and Wizard  have a range of 7
-4) The barbarians can move diagonally and attack on the nreaest building found ( manhatten distance) . At max , a player can spawn 6 barbarians , 6 archers and 3 balloons at three different locations in total . 
-5) The Rage and Heal spell can be user at max 7 times(separately) .
+2) There are ```5``` huts , ```1``` Townhall and different number of cannons and wizards for each level:
 
-# Run Instruction :
+	```Level 1``` : 2 cannon , 2 wizard
+	
+	```Level 2``` : 3 cannon , 3 wizard
+	
+	```Level 3``` : 4 cannon , 4 wizard  
+3) Cannon and Wizard  have a range of ```7```
+4) The barbarians can move diagonally and attack on the nreaest building found ( manhatten distance) . At max , a player can spawn ```6``` barbarians , ```6``` archers and ```3``` balloons at three different locations in total . 
+5) The Rage and Heal spell can be user at max ```7``` times(separately) .
 
-Run the commannd python3 game.py on your terminal after installing the colorama library
+# OOPS Principles 
+
+## Inheritence
+* The Building class serves as the base class, from which the Town Hall, Wall, Cannon ,Wizard and Hut classes inherit.  
+* The King ,Queen , Archer , Balloon and Barbarian classes inherit from the Troops class.  
+
+## Abstraction 
+
+ ```move()``` and ```attack()``` methods of the Troop class are two examples of Abstraction . The inner details and implementation of movement and attacking are hidden from the user and the user can directly use these functions without bothering about their internal implementation . 
+ 
+ ## Encapsulation 
+ To realise Encapsulation , all functions or variables pertaining to a particular game entity are grouped under a single class.Then, all that is required to use the feature is to call the method on the class object.  
+ 
+ ## Polymorphism 
+The Troop class has an ```attack()``` method.The Queen class has its specific ```attack()``` method that overrides the default Troop's ```attack()``` method.
+
