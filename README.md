@@ -18,27 +18,27 @@ f) spell.py : This class is used for implementing the rage and heal spells.
 
 The following keyboard presses are relevent for the following jobs :
 
-a) W -> move king up
-b) S -> move king down
-c) D -> move king right
-d) A -> Move king left
-e) 1 -> Spawn a barbarian at the first location
-f) 2 -> Spawn a barbarian at the second location
-g) 3 -> Spawn a barbarian at the third location
-h) 4 -> Spawn king at the first location
-g) 5 -> Spawn king at the second location
-h) 6-> Spawn king at the third location
-i) 7 -> To use heal spell
-j) 8 -> To use Rage spell
-h) Space -> For normal attack of the king
-i) e -> For leviathan attack of the king
-j) z -> Spawn a archer at the first location
-k) x -> Spawn a archer at the second location
-l) c -> Spawn a archer at the third location
-m) v -> Spawn a balloon at the first location
-n) b -> Spawn a balloon at the second location
-o) n -> Spawn a balloon at the third location
-p) 9 -> Special attack of queen
+a) W -> move king up  
+b) S -> move king down  
+c) D -> move king right  
+d) A -> Move king left  
+e) 1 -> Spawn a barbarian at the first location  
+f) 2 -> Spawn a barbarian at the second location  
+g) 3 -> Spawn a barbarian at the third location  
+h) 4 -> Spawn king at the first location  
+g) 5 -> Spawn king at the second location  
+h) 6-> Spawn king at the third location  
+i) 7 -> To use heal spell  
+j) 8 -> To use Rage spell  
+h) Space -> For normal attack of the king  
+i) e -> For leviathan attack of the king  
+j) z -> Spawn a archer at the first location  
+k) x -> Spawn a archer at the second location  
+l) c -> Spawn a archer at the third location  
+m) v -> Spawn a balloon at the first location  
+n) b -> Spawn a balloon at the second location  
+o) n -> Spawn a balloon at the third location  
+p) 9 -> Special attack of queen  
 
 # Features : 
 
