@@ -1,4 +1,4 @@
-# CLASH OF CLANS
+# REGAL BRAWLS
 # Setup :
 To run the game , we need to install colorama library.
 
